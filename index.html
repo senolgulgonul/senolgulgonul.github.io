@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Senol Gulgonul</title>
-<meta name="description" content="Browser-based tools for digital design, control, and signals. Single file, no installs.">
+<meta name="description" content="Browser-based tools for digital design, control, and signals: VeriSim, softfpga, LogicLab, Simuwire, PIDLab, Sekiz, Derle, Weave. Single file, no installs.">
 <style>
   :root{
     --ink:#0e1116;
@@ -183,7 +183,7 @@
       <p class="eyebrow">Electrical and Electronics Engineering</p>
       <h1>Senol Gulgonul</h1>
       <p class="role">
-        Assistant Professor, Electrical and Electronics Engineering,
+        Associate Professor, Electrical and Electronics Engineering,
         <b>Ostim Technical University</b>, Ankara.
       </p>
 
@@ -197,41 +197,79 @@
 
     <section class="group">
       <div class="grouphead">
-        <span class="bus">simulators and tools</span>
-        <span class="desc">run in the browser, share by URL</span>
+        <span class="bus">digital design</span>
+        <span class="desc">Verilog, logic, FPGA, microcontrollers</span>
       </div>
       <div class="grid">
 
         <a class="card" href="verisim/">
-          <span class="sig"><i></i>SIM_01</span>
+          <span class="sig"><i></i>DIG_01</span>
           <h3>VeriSim</h3>
           <p>Icarus Verilog and Yosys in the browser. Simulate, view waveforms, synthesize, and share code by link.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /verisim</span>
         </a>
 
+        <a class="card" href="softfpga/">
+          <span class="sig"><i></i>DIG_02</span>
+          <h3>softfpga</h3>
+          <p>FPGA emulator. Write Verilog, synthesize with Yosys, assign pins, and run it on a virtual board or a virtual iCEBreaker, with a logic analyzer.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /softfpga</span>
+        </a>
+
         <a class="card" href="logiclab/">
-          <span class="sig"><i></i>SIM_02</span>
+          <span class="sig"><i></i>DIG_03</span>
           <h3>LogicLab</h3>
           <p>Logic circuit simulator with gates, MSI blocks, and timing diagrams. Circuits shareable by URL.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /logiclab</span>
         </a>
 
-        <a class="card" href="softfpga/">
-          <span class="sig"><i></i>SIM_03</span>
-          <h3>softFPGA</h3>
-          <p>Browser-based FPGA flow with a light Gowin-style IDE, Yosys synthesis, and a schematic viewer.</p>
-          <span class="path"><span class="arrow">&rsaquo;</span> /softfpga</span>
+        <a class="card" href="sekiz/">
+          <span class="sig"><i></i>DIG_04</span>
+          <h3>Sekiz</h3>
+          <p>Arduino toolchain and 8-bit AVR simulator for the ATmega328P in one page: compile C or C++ and run it.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /sekiz</span>
+        </a>
+
+        <a class="card" href="derle/">
+          <span class="sig"><i></i>DIG_05</span>
+          <h3>Derle</h3>
+          <p>A real C compiler in the browser. Clang compiles standard C and the program runs in the tab.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /derle</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="group">
+      <div class="grouphead">
+        <span class="bus">control, circuits and signals</span>
+        <span class="desc">block diagrams, PID, SPICE, satellite links</span>
+      </div>
+      <div class="grid">
+
+        <a class="card" href="simuwire/">
+          <span class="sig"><i></i>SYS_01</span>
+          <h3>Simuwire</h3>
+          <p>Block diagram simulation. Build control loops from blocks and wires, run them, and read a scope. Opens Simulink .slx and .mdl files.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /simuwire</span>
         </a>
 
         <a class="card" href="pidlab/">
-          <span class="sig"><i></i>SIM_04</span>
+          <span class="sig"><i></i>SYS_02</span>
           <h3>PIDLab</h3>
           <p>PID tuning playground with step response, Bode, Nyquist, and root locus views.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /pidlab</span>
         </a>
 
+        <a class="card" href="weave/">
+          <span class="sig"><i></i>SYS_03</span>
+          <h3>Weave</h3>
+          <p>Turns a SPICE netlist into a drawn LTspice schematic (.asc).</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /weave</span>
+        </a>
+
         <a class="card" href="linkbudget/">
-          <span class="sig"><i></i>SIM_05</span>
+          <span class="sig"><i></i>SYS_04</span>
           <h3>Link Budget</h3>
           <p>Satellite link budget calculator for course work, validated against exam material.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /linkbudget</span>
@@ -266,27 +304,69 @@
 
     <section class="group">
       <div class="grouphead">
-        <span class="bus">experiments</span>
+        <span class="bus">utilities and experiments</span>
         <span class="desc">side projects and curiosities</span>
       </div>
       <div class="grid">
 
-        <a class="card" href="suni/">
+        <a class="card" href="tarascan/">
           <span class="sig"><i></i>EXP_01</span>
+          <h3>TaraScan</h3>
+          <p>A one-screen page scanner for iPhone: photograph the pages, save them as one PDF.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /tarascan</span>
+        </a>
+
+        <a class="card" href="elakin/">
+          <span class="sig"><i></i>EXP_02</span>
+          <h3>Elakin</h3>
+          <p>Train a tiny language model on your own text and watch every step.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /elakin</span>
+        </a>
+
+        <a class="card" href="ghostfont/">
+          <span class="sig"><i></i>EXP_03</span>
+          <h3>Ghost Font</h3>
+          <p>Text hidden in motion: invisible in every frame, readable in the flow.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /ghostfont</span>
+        </a>
+
+        <a class="card" href="suni/">
+          <span class="sig"><i></i>EXP_04</span>
           <h3>Sun'i</h3>
           <p>Turkish makam taksim generator, calibrated against classical reference pieces.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /suni</span>
         </a>
 
+        <a class="card" href="udcalar/">
+          <span class="sig"><i></i>EXP_05</span>
+          <h3>Ud &Ccedil;alar</h3>
+          <p>Plays 2200 Turkish makam pieces from the SymbTr corpus with the sound of an oud.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /udcalar</span>
+        </a>
+
+        <a class="card" href="oklid/">
+          <span class="sig"><i></i>EXP_06</span>
+          <h3>&Ouml;klid</h3>
+          <p>A ruler-and-compass game through the constructions of Euclid&rsquo;s Elements. In Turkish.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /oklid</span>
+        </a>
+
+        <a class="card" href="bilardo/">
+          <span class="sig"><i></i>EXP_07</span>
+          <h3>Bilardo</h3>
+          <p>Billiards on a real rigid-body model of ball and cloth.</p>
+          <span class="path"><span class="arrow">&rsaquo;</span> /bilardo</span>
+        </a>
+
         <a class="card" href="eigengrau/">
-          <span class="sig"><i></i>EXP_02</span>
+          <span class="sig"><i></i>EXP_08</span>
           <h3>eigengrau</h3>
           <p>A phosphene field study, the faint visual texture seen in the dark.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /eigengrau</span>
         </a>
 
         <a class="card" href="https://senolgulgonul.github.io/tt09-senolgulgonul/">
-          <span class="sig"><i></i>EXP_03</span>
+          <span class="sig"><i></i>EXP_09</span>
           <h3>TinyTapeout 09</h3>
           <p>A small open-silicon design submitted to a TinyTapeout shuttle.</p>
           <span class="path"><span class="arrow">&rsaquo;</span> /tt09</span>
